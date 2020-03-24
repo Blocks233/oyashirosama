@@ -1,0 +1,16 @@
+body {
+ scrollbar-face-color:#000000;
+ scrollbar-highlight-color #000000;
+ scrollbar-shadow-color:#000000;
+ scrollbar-3dlight-color:#660000;
+ scrollbar-darkshadow-color:#FFFFFF;
+ scrollbar-track-color:#660000;
+ scrollbar-arrow-color:#FFFFFF
+}
+a:link { text-decoration:none ; color : #FFFFFF }
+a:visited { text-decoration:none ; color : #FFFFFF }
+a:active { text-decoration:none ; color : #FF0000 }
+a:hover { text-decoration:none ; color:#FFFFFF ; background-color : #990000 }
+.title { background-image:url("img/title.jpg")/*tpa=http://www.oyashirosama.com/web/top/img/title.jpg*/;}
+.bg { background-image:url("img/main-bg.jpg")/*tpa=http://www.oyashirosama.com/web/top/img/main-bg.jpg*/;}
+.scroll{ overflow:auto;height:230px;width:"95%";text-align="left" } 

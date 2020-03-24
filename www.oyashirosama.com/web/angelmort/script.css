@@ -1,0 +1,17 @@
+body {
+background-image: url("img/bg.jpg")/*tpa=http://www.oyashirosama.com/web/angelmort/img/bg.jpg*/; 
+background-repeat: no-repeat; 
+background-position: top; 
+scrollbar-face-color:#99CCFF;
+scrollbar-highlight-color ##99CCFF;
+scrollbar-shadow-color:##99CCFF;
+scrollbar-3dlight-color:#666666;
+scrollbar-darkshadow-color:#FFFFFF;
+scrollbar-track-color:#66666666;
+scrollbar-arrow-color:#FFFFFF
+}
+a:link { text-decoration:none ; color : #000000 }
+a:visited { text-decoration:none ; color : #000000 }
+a:active { text-decoration:none ; color : #FF0000 }
+a:hover { border-bottom:1px #3366CC dotted;color : #3366CC }
+.scroll{ overflow:auto;height:95%;width:90%;text-align:left;} 

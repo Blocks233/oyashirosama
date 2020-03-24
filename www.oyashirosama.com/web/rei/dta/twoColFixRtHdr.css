@@ -1,0 +1,54 @@
+@charset "utf-8";
+body  {
+	margin: 0; /* 複数の異なるブラウザの初期設定値に対応するため、body エレメントのマージンと余白を 0 にすることをお勧めします */
+	padding: 0;
+	text-align: center; /* これにより、IE 5* ブラウザではコンテナが中央揃えになります。そして、テキストは、#container セレクタの初期設定である左揃えに設定されます */
+	color: #000000;
+}
+.twoColFixRtHdr #container { 
+	width: 780px;  /* 最大幅である 800px より 20px 小さくすることにより、ブラウザクロームの使用が可能となり、水平スクロールバーが表示されなくなります */
+	background: #FFFFFF;
+	margin: 0 auto; /* 自動マージン（幅と連動）により、ページが中央揃えになります */
+	border: 1px solid #000000;
+	text-align: left; /* この設定は body エレメントの text-align: center より優先されます。 */
+} 
+.twoColFixRtHdr #header { 
+	background: #99CCFF; 
+	padding: 0 10px 0 20px;  /* この余白は、その下に表示される div のエレメントの左揃えと一致します。#header でテキストの代わりにイメージが使用される場合は、必要に応じて、余白を削除してください。 */
+} 
+.twoColFixRtHdr #header h1 {
+	margin: 0; /* #header div の最後のエレメントのマージンを 0 に設定することにより、マージンの相殺（div 間の原因不明のスペース）が回避されます。div の周囲に境界線が適用されている場合は、境界線によってマージンの相殺が回避されるため、この操作は不要です */
+	padding: 10px 0; /* マージンの代わりに余白を使用して、エレメントを div の端に接触しない位置に維持することができます */
+}
+.twoColFixRtHdr #sidebar1 {
+	float: right; /* このエレメントはフローティングエレメントであるため、幅が設定されている必要があります */
+	width: 200px; /* 標準に準拠したブラウザまたは Internet Explorer の標準モードでは、この div の実際の幅には、幅に加えて余白と境界線も含まれます */
+	background: #CCFFFF; /* 背景色は、列内のコンテンツの長さにわたって表示されます */
+	padding: 15px 10px;
+}
+.twoColFixRtHdr #mainContent { 
+	margin: 0 250px 0 0; /* この div エレメントの右マージンにより、ページの右側に #sidebar1 div が設定されます。#sidebar1 div に含まれるコンテンツの量に関係なく、#sidebar1 div のスペースは維持されます。#sidebar1 のコンテンツが終了した後のスペースに #mainContent div のテキストを挿入するには、このマージンを削除します。 */
+	padding: 0 20px; /* 余白は div ボックスの内側のスペース、マージンは div ボックスの外側のスペースです */
+} 
+.twoColFixRtHdr #footer { 
+	padding: 0 10px 0 20px; /* この余白は、その上に表示される div のエレメントの左揃えと一致します。 */
+	background:#CCFFFF; 
+} 
+.twoColFixRtHdr #footer p {
+	margin: 0; /* フッターの最初のエレメントのマージンを 0 に設定することにより、マージンの相殺（div 間のスペース）が回避されます */
+	padding: 10px 0; /* このエレメントの余白により、マージンの相殺を発生させることなく、マージンの効果とまったく同じように、スペースが設定されます */
+}
+.fltrt { /* このクラスは、ページ上でフローティングエレメントを右側に配置するのに使用できます。プローティングエレメントは、ページ上でその横に配置されるエレメントの前に配置される必要があります。 */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* このクラスは、ページ上でフローティングエレメントを左側に配置するのに使用できます */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* このクラスは、div またはブレークエレメントに適用される必要があり、また、フローティングエレメントが完全に含まれているコンテナの末尾の直前にある最後のエレメントである必要があります */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}

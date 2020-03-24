@@ -1,0 +1,48 @@
+@charset "utf-8";
+body  {
+	font-size:13px;
+	color:#FFFFFF;
+	background: #000;
+	background-image:url("images/title.png")/*tpa=http://www.oyashirosama.com/web/kira/lib/css/images/title.png*/;
+	background-repeat:no-repeat;
+	background-position:top right;
+	margin: 0; 
+	padding: 0;
+	text-align: center;
+	color: #fff;
+}
+#container { 
+	width: 600px;  /* 最大幅である 800px より 20px 小さくすることにより、ブラウザクロームの使用が可能となり、水平スクロールバーが表示されなくなります */
+	margin: 0 auto; /* 自動マージン（幅と連動）により、ページが中央揃えになります */
+	text-align: left; /* この設定は body エレメントの text-align: center より優先されます。 */
+}
+#sidebar1 {
+	float: left; /* このエレメントはフローティングエレメントであるため、幅が設定されている必要があります */
+	width: 200px; /* 標準に準拠したブラウザまたは Internet Explorer の標準モードでは、この div の実際の幅には、幅に加えて余白と境界線も含まれます */
+	padding: 0px 10px 15px 20px;
+}
+#mainContent { 
+	margin: 0 0 0 250px; /* この div エレメントの左マージンにより、ページの左側に #sidebar1 div が設定されます。#sidebar1 div に含まれるコンテンツの量に関係なく、#sidebar1 div のスペースは維持されます。#sidebar1 のコンテンツが終了した後のスペースに #mainContent div のテキストを挿入するには、このマージンを削除します。 */
+	padding: 0 20px 20px; /* 余白は div ボックスの内側のスペース、マージンは div ボックスの外側のスペースです */
+} 
+.fltrt { /* このクラスは、ページ上でフローティングエレメントを右側に配置するのに使用できます。プローティングエレメントは、ページ上でその横に配置されるエレメントの前に配置される必要があります。 */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* このクラスは、ページ上でフローティングエレメントを左側に配置するのに使用できます */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* このクラスは、div またはブレークエレメントに適用される必要があり、また、フローティングエレメントが完全に含まれているコンテナの末尾の直前にある最後のエレメントである必要があります */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+h1{
+	font-size:24px;
+}
+img{
+	border:0;
+	behavior: url("iepngfix.htc")/*tpa=http://www.oyashirosama.com/web/kira/lib/css/iepngfix.htc*/; }
